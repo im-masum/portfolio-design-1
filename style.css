@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Guides:wght@400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+body{
+    background: #08212b;
+    color: #e7e2e2;
+}
+.header{
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    justify-content: space-between;
+    align-items: center;
+    background: transparent;
+    z-index: 100;
+}
+.logo{
+    position: relative;
+    font-size: 30px;
+    font-weight: 600;
+    color: #07d3f3;
+}
+
+.logo::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #08212b;
+    animation: showRight 1s ease forwards;
+    animation-delay: .3s;
+}
+
+.navbar a{
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-size: 18px;
+    color: #e7e2e2;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: all ease .3s;
+    text-shadow: 5px 5px 10px;
+    
+}
+.navbar::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #08212b;
+    animation: showRight 3s ease forwards;
+    animation-delay: 1s;
+    
+}
+.navbar a:hover, .navbar a.active{
+    box-shadow: 5px 5px 20px .5px;
+    color: rgb(2, 248, 232);
+    
+}
+.home{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    padding: 0 10%;
+}
+.image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 20px;
+    width: 40%;
+    height: 80vh;
+    background:transparent;    
+
+}
+.image::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #08212b;
+    animation: showRight 1s ease forwards;
+    animation-delay: 5s;  
+}
+.image img{
+    border-radius: 50%;
+    padding: 5px;
+    width: 60%;
+    height: 70%;
+    transition: .5s;
+    background: linear-gradient(to right, rgb(93, 96, 208), rgba(211, 6, 6, 0.225), rgb(4, 4, 225));
+
+}
+
+
+.image img:hover{
+    transform: scale(1.1);
+    color: #131313;
+    box-shadow: 0 0 20px cyan,
+    0 0 20px cyan, 0 0 20px cyan;
+    transition: 0.5s;
+    opacity: .9;
+}
+    
+
+
+.home-content{
+    max-width: 700px;
+}
+.home-content h1{
+    position: relative;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.5;
+    background: linear-gradient(to right, blue, red,purple);
+    background-clip: text;
+    color: transparent;
+}
+ h1::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #08212b;
+    animation: showRight 1s ease forwards;
+    animation-delay: 2s;
+    
+}
+
+.home-content h3{
+    position: relative;
+    font-size: 32px;
+    font-weight: 700;
+    color: #0b95cc;
+}
+.home-content h3::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #08212b;
+    animation: showRight 3s ease forwards;
+    animation-delay: 2.5s;
+}
+
+.home-content p{
+    position: relative;
+    font-size: 24px;
+    margin: 20px 0 40px ;
+    color: #356b73;
+}
+
+.home-content p::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #08212b;
+    animation: showRight 2s ease forwards;
+    animation-delay: 3s;
+}
+.home-content .btn-bx{
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    width: 345px;
+    height: 50px;
+
+}
+
+.home-content .btn-bx::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #08212b;
+    animation: showRight 1s ease forwards;
+    animation-delay: 4s;
+    z-index: 2;
+}
+
+.btn-bx a{
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 100%;
+    background: #0b95cc;
+    border: 3px solid #0b95cc;
+    border-radius: 8px;
+    font-size: 18px;
+    color: #151718;
+    font-weight: 600;
+    letter-spacing: 1px;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+
+}
+.btn-bx a:nth-child(2){
+    background: transparent;
+    color: #0b95cc;
+}
+.btn-bx a:nth-child(2):hover{
+    color: #fcfbfb;
+}
+.btn-bx a:nth-child(2)::before{
+    
+    background: #0b95cc;
+}
+.btn-bx a:hover{
+    color: #0b95cc;
+}
+.btn-bx a::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #11111c;
+    z-index: -1;
+    transition: .5s;
+}
+.btn-bx a:hover::before{
+    width: 100%;
+
+}
+.home-sc{
+    display: flex;
+    position: absolute;
+    bottom: 100px;
+    width: 240px;
+    justify-content: space-between;
+    
+
+}
+
+.home-sc::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #08212b;
+    animation: showRight 1.5s ease forwards;
+    animation-delay: 5s;
+    z-index: 2;
+}
+
+.home-sc a{
+    display: inline-flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #00abf0;
+    border-radius: 50%;
+    font-size: 30px;
+    color: #00abf0;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+} 
+.home-sc a:hover{
+    color: #11111c;
+}
+.home-sc a::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background:#00abf0;
+    z-index: -1;
+    transition: .5s;
+}
+.home-sc a:hover:before{
+    width: 100%;
+}
+
+@keyframes showRight {
+    100% {
+        width: 0;
+    }
+}

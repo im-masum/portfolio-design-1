@@ -131,6 +131,7 @@ body{
     background: linear-gradient(to right, blue, red,purple);
     background-clip: text;
     color: transparent;
+    font-size: 36px;
 }
  h1::before{
     content: "";
@@ -251,7 +252,7 @@ body{
     width: 100%;
 
 }
-.home-sc{
+.social-media-link{
     display: flex;
     position: absolute;
     bottom: 100px;
@@ -261,7 +262,7 @@ body{
 
 }
 
-.home-sc::before{
+.social-media-link::before{
     content: "";
     position: absolute;
     top: 0;
@@ -274,7 +275,7 @@ body{
     z-index: 2;
 }
 
-.home-sc a{
+.social-media-link a{
     display: inline-flex;
     position: relative;
     justify-content: center;
@@ -290,10 +291,10 @@ body{
     overflow: hidden;
     transition: .5s;
 } 
-.home-sc a:hover{
+.social-media-link a:hover{
     color: #11111c;
 }
-.home-sc a::before{
+.social-media-link a::before{
     content: "";
     position: absolute;
     top: 0;
@@ -304,7 +305,7 @@ body{
     z-index: -1;
     transition: .5s;
 }
-.home-sc a:hover:before{
+.social-media-link a:hover:before{
     width: 100%;
 }
 

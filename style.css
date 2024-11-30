@@ -34,14 +34,14 @@ body {
     font-size: 30px;
     font-weight: 600;
     color: #07d3f3;
-    
+
 }
 
 .logo::before {
     content: "";
     position: absolute;
     top: 0;
-    right:0;
+    right: 0;
     width: 100%;
     height: 100%;
     background: #08212b;
@@ -361,7 +361,7 @@ h1::before {
 
 /* ===== Mobile Responsive ====== */
 
-@media only screen and (max-width:766px) {
+@media only screen and (min-width:601px) and (max-width:768) {
 
     #click:checked~.hamburger i::before {
         content: "\f00d";
@@ -398,10 +398,10 @@ h1::before {
 
     }
 
-     .nav ul li {
+    .nav ul li {
         margin: 10px 0px;
     }
-    
+
     .nav ul li a {
         border-radius: 10px;
         display: block;
@@ -411,69 +411,20 @@ h1::before {
         width: 80%;
     }
 
-    .nav ul li a a:hover, .nav ul li a.active {
-        box-shadow: 5px 5px 20px .5px;
-        color: rgb(2, 248, 232);
-
-    }
-
-    .home {
-        display: flex;
-        align-items: center;
-        height: 100vh;
-        padding: 0 10%;
-    }
-
     .image {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: center;
-        position: absolute;
         right: -50px;
         width: 50%;
         height: 50vh;
-        background: transparent;
-
-    }
-
-    .image::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        right: 0;
-        width: 100%;
-        height: 100%;
-        background: #08212b;
-        animation: showRight 1s ease forwards;
-        animation-delay: 3s;
     }
 
     .image img {
-        border-radius: 50%;
-        padding: 5px;
         width: 50%;
         height: 50%;
-        transition: .3s;
-        background: linear-gradient(to right, rgb(93, 96, 208), rgba(211, 6, 6, 0.225), rgb(4, 4, 225));
-
     }
-
-
-    .image img:hover {
-        transform: scale(1.1);
-        color: #131313;
-        box-shadow: 0 0 20px cyan,
-            0 0 20px cyan, 0 0 20px cyan;
-        transition: 0.3s;
-        opacity: .9;
-    }
-
-
 
     .home-content {
         max-width: 500px;
-     }
+    }
 
     .home-content h1 {
         font-size: 32px;
@@ -482,9 +433,116 @@ h1::before {
     .home-content h3 {
         font-size: 32px;
     }
-    .home-content p{
+
+    .home-content p {
         font-size: 20px;
     }
+
+    .home-content .btn-bx {
+        display: flex;
+        position: relative;
+        justify-content: space-between;
+        width: 280px;
+        height: 40px;
+    }
+
+    .btn-bx a {
+        width: 130px;
+    }
+
+    .social-media-link {
+        display: flex;
+        position: absolute;
+        bottom: 100px;
+        width: 240px;
+        justify-content: space-between;
+
+
+    }
+
+    .social-media-link a {
+        font-size: 28px;
+    }
+
+}
+ /* ====Responsive For tab */
+@media only screen and (min-width:992px) and (max-width:1200px){
+
+    #click:checked~.hamburger i::before {
+        content: "\f00d";
+    }
+
+    #click:checked~ul {
+        left: 0%;
+    }
+
+    .hamburger {
+        display: block;
+        font-size: 40px;
+        padding: 20px 20px;
+        cursor: pointer;
+        color: rgb(163, 211, 223);
+    }
+
+    .nav {
+        width: 100%;
+        margin: 10px auto;
+    }
+
+    .nav ul {
+        display: block;
+        position: fixed;
+        top: 130px;
+        left: -100%;
+        margin-left: 70px;
+        width: 40%;
+        align-items: center;
+        transition: all 0.3s ease;
+        background: rgb(57, 67, 65);
+        border-radius: 20px;
+
+    }
+
+    .nav ul li {
+        margin: 10px 0px;
+    }
+
+    .nav ul li a {
+        border-radius: 10px;
+        display: block;
+        padding: 8px;
+        margin: 0px auto;
+        font-size: 24px;
+        width: 80%;
+    }
+
+    .image {
+        right: -50px;
+        width: 50%;
+        height: 50vh;
+    }
+
+    .image img {
+        width: 50%;
+        height: 50%;
+    }
+
+    .home-content {
+        max-width: 500px;
+    }
+
+    .home-content h1 {
+        font-size: 32px;
+    }
+
+    .home-content h3 {
+        font-size: 32px;
+    }
+
+    .home-content p {
+        font-size: 20px;
+    }
+
     .home-content .btn-bx {
         display: flex;
         position: relative;

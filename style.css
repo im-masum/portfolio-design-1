@@ -361,7 +361,7 @@ h1::before {
 
 /* ===== Mobile Responsive ====== */
 
-@media screen and (min-width:601px) and (max-width:768px) {
+@media screen and (max-width:600px)  {
 
     #click:checked~.hamburger i::before {
         content: "\f00d";
@@ -467,7 +467,7 @@ h1::before {
 }
 
 /* ====Responsive For tab */
-@media screen and (min-width:992px) and (max-width:1200px){
+@media screen and (max-width:767px) {
 
     #click:checked~.hamburger i::before {
         content: "\f00d";

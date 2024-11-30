@@ -361,7 +361,7 @@ h1::before {
 
 /* ===== Mobile Responsive ====== */
 
-@media screen and (max-width:600px)  {
+@media screen and (max-width:767px)  {
 
     #click:checked~.hamburger i::before {
         content: "\f00d";
@@ -466,108 +466,3 @@ h1::before {
 
 }
 
-/* ====Responsive For tab */
-@media screen and (max-width:767px) {
-
-    #click:checked~.hamburger i::before {
-        content: "\f00d";
-    }
-
-    #click:checked~ul {
-        left: 0%;
-    }
-
-    .hamburger {
-        display: block;
-        font-size: 40px;
-        padding: 20px 20px;
-        cursor: pointer;
-        color: rgb(163, 211, 223);
-    }
-
-    .nav {
-        width: 100%;
-        margin: 10px auto;
-    }
-
-    .nav ul {
-        display: block;
-        position: fixed;
-        top: 130px;
-        left: -100%;
-        margin-left: 70px;
-        width: 40%;
-        align-items: center;
-        transition: all 0.3s ease;
-        background: rgb(57, 67, 65);
-        border-radius: 20px;
-
-    }
-
-    .nav ul li {
-        margin: 10px 0px;
-    }
-
-    .nav ul li a {
-        border-radius: 10px;
-        display: block;
-        padding: 8px;
-        margin: 0px auto;
-        font-size: 24px;
-        width: 80%;
-    }
-
-    .image {
-        right: -50px;
-        width: 50%;
-        height: 50vh;
-    }
-
-    .image img {
-        width: 50%;
-        height: 50%;
-    }
-
-    .home-content {
-        max-width: 500px;
-    }
-
-    .home-content h1 {
-        font-size: 32px;
-    }
-
-    .home-content h3 {
-        font-size: 32px;
-    }
-
-    .home-content p {
-        font-size: 20px;
-    }
-
-    .home-content .btn-bx {
-        display: flex;
-        position: relative;
-        justify-content: space-between;
-        width: 280px;
-        height: 40px;
-    }
-
-    .btn-bx a {
-        width: 130px;
-    }
-
-    .social-media-link {
-        display: flex;
-        position: absolute;
-        bottom: 100px;
-        width: 240px;
-        justify-content: space-between;
-
-
-    }
-
-    .social-media-link a {
-        font-size: 28px;
-    }
-
-} 

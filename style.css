@@ -389,8 +389,8 @@ h1::before {
         position: fixed;
         top: 130px;
         left: -100%;
-        margin-left: 70px;
-        width: 40%;
+        margin-left: 30px;
+        width: 90%;
         align-items: center;
         transition: all 0.3s ease;
         background: rgb(57, 67, 65);
@@ -412,9 +412,12 @@ h1::before {
     }
 
     .image {
-        right: -50px;
-        width: 50%;
-        height: 50vh;
+        position: absolute;
+        left: 0px; 
+        top: 20px;
+        bottom: 0px;
+        width: 100%;
+        height: 40vh;
     }
 
     .image img {
@@ -423,7 +426,7 @@ h1::before {
     }
 
     .home-content {
-        max-width: 500px;
+        /* width: 500px; */
     }
 
     .home-content h1 {

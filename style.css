@@ -385,6 +385,8 @@ h1::before {
 
     .nav {
         width: 100%;
+        align-items: center;
+        justify-content: center;
     }
 
     .nav a {

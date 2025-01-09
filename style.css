@@ -8,21 +8,27 @@
 }
 
 body {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
     background: #08212b;
     color: #e7e2e2;
+    
 }
 
 .nav {
     display: flex;
-    position: fixed;
+    position: static;
     top: 0;
     left: 0;
     width: 100%;
-    padding: 30px;
+    height: 100px;
+    padding: 10px;
     justify-content: space-between;
     align-items: center;
     background: transparent;
     z-index: 1;
+    margin: 10px 10px;
 }
 
 .logo {
@@ -77,7 +83,7 @@ body {
     width: 100%;
     height: 100%;
     background: #08212b;
-    animation: showRight 3s ease forwards;
+    animation: showRight 1s ease forwards;
     animation-delay: 1s;
 
 }
@@ -94,18 +100,17 @@ body {
     box-shadow: 5px 5px 20px .5px;
     color: rgb(2, 248, 232);
 
-}
+} 
 
 .image {
     display: flex;
     align-items: center;
     justify-content: center;
-    position: absolute;
+    position: relative;
     right: 20px;
     width: 40%;
-    height: 60vh;
+    height: 30vh;
     background: transparent;
-
 }
 
 .image::before {
@@ -117,14 +122,14 @@ body {
     height: 100%;
     background: #08212b;
     animation: showRight 1s ease forwards;
-    animation-delay: 5s;
+    animation-delay: 1s;
 }
 
 .image img {
     border-radius: 50%;
     padding: 5px;
-    width: 60%;
-    height: 70%;
+    width: 40%;
+    height: 100%;
     transition: .5s;
     background: linear-gradient(to right, rgb(93, 96, 208), rgba(211, 6, 6, 0.225), rgb(4, 4, 225));
 
@@ -138,22 +143,23 @@ body {
         0 0 20px cyan, 0 0 20px cyan;
     transition: 0.5s;
     opacity: .9;
-}
+} 
 
-.home {
+.home{
     display: flex;
-    align-items: center;
-    height: 100vh;
-    padding: 20px 20px;
-    border: 10px solid rgb(9, 46, 60);
+    justify-content: space-between;
+    width: 100%;
+    height: auto; 
+    padding: 20px;
     border-radius: 10px;
 }
 
 .home-content {
     display: flex;
+    position: relative;
     flex-direction: column;
     padding: 10px 0;
-    width: 50%;
+    width: 40%;
 }
 
 .home-content h1 {
@@ -176,7 +182,7 @@ h1::before {
     height: 100%;
     background: #08212b;
     animation: showRight 1s ease forwards;
-    animation-delay: 2s;
+    animation-delay: 1s;
 
 }
 
@@ -195,8 +201,8 @@ h1::before {
     width: 100%;
     height: 100%;
     background: #08212b;
-    animation: showRight 3s ease forwards;
-    animation-delay: 2.5s;
+    animation: showRight 1s ease forwards;
+    animation-delay: 1s;
 }
 
 .home-content p {
@@ -214,8 +220,8 @@ h1::before {
     width: 100%;
     height: 100%;
     background: #08212b;
-    animation: showRight 2s ease forwards;
-    animation-delay: 3s;
+    animation: showRight 1s ease forwards;
+    animation-delay: 1s;
 }
 
 .home-content .btn-bx {
@@ -236,7 +242,7 @@ h1::before {
     height: 100%;
     background: #08212b;
     animation: showRight 1s ease forwards;
-    animation-delay: 4s;
+    animation-delay: 1s;
     z-index: 2;
 }
 
@@ -295,13 +301,18 @@ h1::before {
 
 }
 
+.footer{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 200px;
+    padding: 20px;
+}
 .social-media-link {
     display: flex;
-    position: absolute;
-    bottom: 100px;
-    width: 240px;
+    position: relative;
+    width: 300px;
     justify-content: space-between;
-
 
 }
 
@@ -313,8 +324,8 @@ h1::before {
     width: 100%;
     height: 100%;
     background: #08212b;
-    animation: showRight 1.5s ease forwards;
-    animation-delay: 5s;
+    animation: showRight 1s ease forwards;
+    animation-delay: 1s;
     z-index: 2;
 }
 
@@ -363,7 +374,7 @@ h1::before {
 
 /* ===== Mobile Responsive ====== */
 
-@media screen and (max-width:767px) {
+@media screen and (max-width:768px) {
 
     #click:checked~.hamburger i::before {
         content: "\f00d";
@@ -376,11 +387,15 @@ h1::before {
     .hamburger {
         display: block;
         position: fixed;
-        margin-right: 20px;
+        right: 20px;
         font-size: 30px;
         padding: 0px;
         cursor: pointer;
         color: rgb(163, 211, 223);
+    }
+    body{
+        width: 100%;
+        height: auto;
     }
 
     .nav {
@@ -399,10 +414,11 @@ h1::before {
     .nav ul {
         display: block;
         position: fixed;
-        top: 130px;
+        top: 115px;
         left: -100%;
-        margin-left: 30px;
-        width: 95%;
+        margin-left: 20px;
+        width: 90%;
+        padding: 20px;
         align-items: center;
         justify-content: center;
         transition: all 0.3s ease;
@@ -416,7 +432,7 @@ h1::before {
         margin: 10px 0px;
         margin: 10px auto;
     }
-
+    
     .nav ul li a {
         border-radius: 10px;
         display: block;
@@ -425,6 +441,7 @@ h1::before {
         font-size: 20px;
         width: 60%;
         text-align: center;
+
     }
 
     .image {
@@ -437,17 +454,23 @@ h1::before {
     }
 
     .image img {
-        width: 60%;
-        height: 60%;
+        width: 90%;
+        height: 70%;
+        border-radius: 20px;
     }
 
     .home {
+        display: flex;
         width: 100%;
+        height: auto;
+        flex-direction: column;
         
     }
 
     .home-content {
-        width: 500px;
+        width: 100%;
+        position: absolute;
+        bottom: 400px;
     }
 
     .home-content h1 {

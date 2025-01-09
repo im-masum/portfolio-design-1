@@ -404,6 +404,7 @@ h1::before {
         margin-left: 30px;
         width: 90%;
         align-items: center;
+        justify-content: center;
         transition: all 0.3s ease;
         background: rgb(57, 67, 65);
         border-radius: 20px;

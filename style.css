@@ -609,7 +609,7 @@ h1::before {
 
     .footer {
         display: flex;
-        width: 95%;
+        /* width: 100%; */
         margin-top: 20px;
         margin: 0px 10px 0px 10px;
         bottom: 0;

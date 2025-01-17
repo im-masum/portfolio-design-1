@@ -348,8 +348,12 @@ h1::before {
     color: #00abf0;
     margin-bottom: 20px;
     border-bottom: 1px solid cyan;
+    font-size: 24px;
 }
-
+.card p{
+    font-size: 16px;
+    font-weight: 300;
+}
 .card:hover{
   transform: scale(1.01);
   background-color: #0a1c23;

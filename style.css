@@ -371,7 +371,7 @@ h1::before {
     width: 100%;
     height: auto;
     padding: 20px;
-    box-shadow: 1px 2px 10px rgb(125, 100, 100);
+    box-shadow: 1px 1px 10px #214d5f;
     border-radius: 10px;
     margin: 10px;
 
@@ -478,7 +478,7 @@ h1::before {
 
 /* ===== Mobile Responsive ====== */
 
-@media screen and (max-width:768px) {
+@media (max-width:767px) {
 
     #click:checked~.hamburger i::before {
         content: "\f00d";
@@ -652,7 +652,7 @@ h1::before {
         justify-content: center;
         width: 92%;
         margin-top: 20px;
-        margin:0px 30px;
+        margin: 0px 30px;
         padding: 20px;
         bottom: 0;
     }

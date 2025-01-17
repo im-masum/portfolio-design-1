@@ -627,6 +627,9 @@ h1::before {
         padding: 20px;
         height: 200px;
     }
+    .card p{
+        font-size:14px ;
+    }
 
     .footer {
         display: flex;

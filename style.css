@@ -331,13 +331,26 @@ h1::before {
 
 .card {
     display: flex;
-    padding: 1rem;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    padding: 20px;
     box-shadow: 1px 1px 10px #214d5f;
     width: 25%;
     height: 300px;
     border-radius: 10px;
+    transition: .3s;
 
+}
+.card h4{
+    color: #00abf0;
+    margin-bottom: 20px;
+    border-bottom: 1px solid cyan;
+}
+
+.card:hover{
+  transform: scale(1.01);
+  background-color: #0a1c23;
 }
 
 .footer {
@@ -366,6 +379,11 @@ h1::before {
     text-decoration: none;
     font-size: 20px;
     color: #463f3f;
+    transition: .5s;
+}
+.footer-nav a:hover{
+    color: #fff;
+    border-bottom: 2px solid;
 }
 
 .footer-bottom {

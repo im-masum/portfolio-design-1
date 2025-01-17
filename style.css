@@ -373,7 +373,7 @@ h1::before {
     padding: 20px;
     box-shadow: 1px 1px 10px #214d5f;
     border-radius: 10px;
-    margin: 10px;
+    margin: 20px auto;
 
 }
 
@@ -416,7 +416,7 @@ h1::before {
     position: relative;
     width: 500px;
     padding: 20px;
-    gap: 15px;
+    gap: 20px;
 
 }
 

@@ -650,7 +650,7 @@ h1::before {
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 95%;
+        width: 90%;
         margin-top: 20px;
         /* margin: 0px 10px 0px 10px; */
         bottom: 0;

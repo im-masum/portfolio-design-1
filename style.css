@@ -314,9 +314,10 @@ h1::before {
 }
 
 .services h1 {
-    padding: 1rem;
+    padding: 10px 40px;
     background-color: #0d2b37;
-    border-radius: 4%;
+    border-radius: 8px;
+    margin: 10px 0;
 }
 
 .service-card {

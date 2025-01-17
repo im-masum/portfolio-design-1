@@ -344,19 +344,22 @@ h1::before {
     transition: .3s;
 
 }
-.card h4{
+
+.card h4 {
     color: #00abf0;
     margin-bottom: 20px;
     border-bottom: 1px solid cyan;
     font-size: 24px;
 }
-.card p{
+
+.card p {
     font-size: 16px;
     font-weight: 300;
 }
-.card:hover{
-  transform: scale(1.01);
-  background-color: #0a1c23;
+
+.card:hover {
+    transform: scale(1.01);
+    background-color: #0a1c23;
 }
 
 .footer {
@@ -387,7 +390,8 @@ h1::before {
     color: #463f3f;
     transition: .5s;
 }
-.footer-nav a:hover{
+
+.footer-nav a:hover {
     color: #fff;
     border-bottom: 2px solid;
 }
@@ -486,7 +490,7 @@ h1::before {
 
     .hamburger {
         display: block;
-        position:absolute;
+        position: absolute;
         right: 25px;
         font-size: 30px;
         padding: 0px;
@@ -536,7 +540,7 @@ h1::before {
         margin: 10px 0px;
         margin: 10px auto;
     }
-    
+
     .nav ul li a {
         border-radius: 10px;
         display: block;
@@ -633,18 +637,22 @@ h1::before {
         padding: 20px;
         height: 200px;
     }
-    .card h4{
+
+    .card h4 {
         font-size: 24px;
     }
-    .card p{
-        font-size:14px ;
+
+    .card p {
+        font-size: 14px;
     }
 
     .footer {
         display: flex;
-        /* width: 100%; */
+        align-items: center;
+        justify-content: center;
+        width: 95%;
         margin-top: 20px;
-        margin: 0px 10px 0px 10px;
+        /* margin: 0px 10px 0px 10px; */
         bottom: 0;
     }
 

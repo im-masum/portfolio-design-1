@@ -614,7 +614,7 @@ h1::before {
     }
 
     .social-media-link a {
-        font-size: 28px;
+        font-size: 24px;
     }
 
     .services {
@@ -650,9 +650,10 @@ h1::before {
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 90%;
+        width: 92%;
         margin-top: 20px;
-        margin: 0px 20px;
+        margin:0px 30px;
+        padding: 20px;
         bottom: 0;
     }
 

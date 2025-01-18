@@ -650,16 +650,15 @@ h1::before {
         display: flex;
         align-items: center;
         justify-content: center;
-        /* width: 100%; */
         margin-top: 20px;
-        margin: 0px 30px;
+        margin: 0px 2cm;
         padding: 20px;
         bottom: 0;
     }
 
 }
 
-@media (max-width:992px) {
+@media (max-width:990px) and (min-width:768px) {
 
     #click:checked~.hamburger i::before {
         content: "\f00d";

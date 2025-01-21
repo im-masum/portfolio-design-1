@@ -512,7 +512,7 @@ h1::before {
     }
 
     .nav a {
-        font-size: 24px;
+        font-size: 20px;
     }
 
     .nav ul li a:hover {
@@ -584,15 +584,15 @@ h1::before {
     }
 
     .home-content h1 {
-        font-size: 32px;
+        font-size: 24px;
     }
 
     .home-content h3 {
-        font-size: 32px;
+        font-size: 18px;
     }
 
     .home-content p {
-        font-size: 20px;
+        font-size: 16px;
     }
 
     .home-content .btn-bx {
@@ -640,7 +640,7 @@ h1::before {
         
     }
     .services h1{
-        font-size: 32px;
+        font-size: 24px;
     }
     .card h4 {
         font-size: 18px;

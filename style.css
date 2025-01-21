@@ -476,6 +476,157 @@ h1::before {
     }
 }
 
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .home {
+        padding: 10px;
+    }
+    
+    .home-content {
+        width: 50%;
+    }
+    
+    .home-content h1 {
+        font-size: 42px;
+    }
+    
+    .image {
+        width: 45%;
+    }
+    
+    .image img {
+        width: 50%;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav {
+        padding: 15px 20px;
+        margin: 0;
+    }
+
+    .nav ul {
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        background: #08212b;
+        height: 100vh;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        transition: all 0.3s ease;
+        margin: 0;
+        padding-top: 40px;
+    }
+
+    #click:checked ~ ul {
+        left: 0;
+    }
+
+    .hamburger {
+        display: block;
+        color: #07d3f3;
+        font-size: 25px;
+        cursor: pointer;
+    }
+
+    .nav ul li {
+        margin: 20px 0;
+    }
+
+    .nav ul li a {
+        font-size: 20px;
+        display: block;
+    }
+
+    .home {
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .home-content {
+        width: 100%;
+        align-items: center;
+    }
+
+    .home-content h1 {
+        font-size: 36px;
+    }
+
+    .home-content h3 {
+        font-size: 24px;
+    }
+
+    .image {
+        width: 100%;
+        height: 40vh;
+    }
+
+    .image img {
+        width: 60%;
+    }
+
+    .service-card {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .card {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        font-size: 24px;
+    }
+
+    .home-content h1 {
+        font-size: 28px;
+    }
+
+    .home-content h3 {
+        font-size: 20px;
+    }
+
+    .btn-bx {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .btn-bx a {
+        width: 200px;
+    }
+
+    .image {
+        height: 35vh;
+    }
+
+    .image img {
+        width: 70%;
+    }
+
+    .footer-nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .footer-nav a {
+        margin: 5px;
+    }
+
+    .social-media-link {
+        gap: 20px;
+    }
+
+    .social-media-link a {
+        font-size: 20px;
+    }
+}
+
 /* ===== Mobile Responsive ====== */
 
 @media (max-width:767px) {

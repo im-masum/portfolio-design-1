@@ -362,6 +362,37 @@ h1::before {
     background-color: #0a1c23;
 }
 
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 0.8rem;
+    background-color: var(--darker-bg);
+    border: 1px solid #333;
+    color: var(--dark-text);
+    border-radius: 5px;
+}
+
+button {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+
 .footer {
     display: flex;
     flex-direction: column;
@@ -637,11 +668,13 @@ h1::before {
         width: 100%;
         padding: 20px;
         height: 200px;
-        
+
     }
-    .services h1{
+
+    .services h1 {
         font-size: 24px;
     }
+
     .card h4 {
         font-size: 18px;
     }
@@ -659,7 +692,8 @@ h1::before {
         padding: 20px;
         bottom: 0;
     }
-    .footer-bottom p{
+
+    .footer-bottom p {
         font-size: 14px;
 
     }

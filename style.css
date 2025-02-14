@@ -5,6 +5,7 @@
     outline: none;
     text-decoration: none;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -29,8 +30,9 @@ body {
     justify-content: space-between;
     align-items: center;
     background: transparent;
-    z-index: 4;
+    z-index: 1000;
     margin: 10px 10px;
+    
 }
 
 .logo {
@@ -303,7 +305,7 @@ h1::before {
 
 }
 
-.services {
+.skills {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -312,16 +314,17 @@ h1::before {
     height: auto;
     padding: 1rem;
     flex-wrap: wrap;
+    transition: .5s;
 }
 
-.services h1 {
+.skills h1 {
     padding: 10px 40px;
     background-color: #0d2b37;
     border-radius: 8px;
     margin: 10px 0;
 }
 
-.service-card {
+.skills-card {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -401,27 +404,26 @@ h1::before {
 }
 
 .form-group {
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
 }
 
 input,
 textarea {
     width: 100%;
     padding: 0.8rem;
-    background-color: var(--darker-bg);
+    background-color: rgb(223, 219, 219);
     border: 1px solid #333;
-    color: var(--dark-text);
     border-radius: 5px;
 }
 
 button {
-    background-color: var(--primary-color);
+    background-color: green;
     color: white;
     padding: 1rem 2rem;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s;
+    
 }
 
 

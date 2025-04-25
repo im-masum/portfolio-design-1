@@ -11,6 +11,7 @@
 body {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     width: 100%;
     height: auto;
     gap: 20px;
@@ -319,17 +320,13 @@ h1::before {
     transition: .5s;
     position: relative;
 }
-.skills-header{
-position: relative;
-border: 1px solid;
-}
+
 .skills h1 {
     padding: 10px 40px;
     background-color: #0d2b37;
     border-radius: 8px;
     margin-block: 10px;
 }
-
 
 .skills-card {
     display: flex;
@@ -644,7 +641,7 @@ button {
     }
 
     .nav a {
-        font-size: 20px;
+        font-size: 16px;
     }
 
     .nav ul li a:hover {
@@ -655,14 +652,14 @@ button {
     .nav ul {
         display: block;
         position: fixed;
-        top: 118px;
+        top: 100px;
         left: -100%;
-        margin-left: 20px;
-        width: 90%;
-        padding: 17px;
+        margin-left: 35px;
+        width: 89%;
+        padding: 10px;
         align-items: center;
         justify-content: center;
-        transition: all 0.3s ease;
+        transition: all 0.5s ease;
         background: rgb(57, 67, 65);
         border-radius: 20px;
         opacity: .9;
@@ -677,18 +674,17 @@ button {
     .nav ul li a {
         border-radius: 10px;
         display: block;
-        padding: 8px;
+        padding: 5px;
         margin: 0px auto;
-        font-size: 20px;
+        font-size: 14px;
         width: 30%;
         text-align: center;
-
     }
 
     .image {
         position: absolute;
         left: 0px;
-        top: -90px;
+        top: -50px;
         width: 100%;
         height: 35vh;
     }
@@ -711,32 +707,36 @@ button {
 
     .home-content {
         position: absolute;
-        bottom: 20px;
+        bottom: 0;
+        align-items: center;
         width: 100%;
+        
     }
 
     .home-content h1 {
-        font-size: 24px;
+        font-size: 20px;
     }
 
     .home-content h3 {
-        font-size: 18px;
+        font-size: 16px;
     }
 
     .home-content p {
-        font-size: 16px;
+        font-size: 14px;
     }
 
     .home-content .btn-bx {
         display: flex;
         position: relative;
         justify-content: space-between;
-        width: 280px;
+        width: 260px;
         height: 40px;
+        padding: 5px;
     }
 
     .btn-bx a {
-        width: 130px;
+        width: 120px;
+        font-size: 14px;
     }
 
     .social-media-link {
@@ -761,12 +761,21 @@ button {
     }
     .projects-container{
         flex-direction: column;
-        margin: 20px;
+        gap: 10px;
+        height: 450px;
     }
 
     .projects-card{
         width: 95%;
-        
+        height: 100px;
+        font-size: 16px;
+    }
+    .projects-card h4{
+        font-size: 16px;
+    }
+    .projects h1{
+        font-size: 18px;
+        margin-top: 30px;
     }
     .services {
         flex-direction: column;

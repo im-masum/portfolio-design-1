@@ -749,9 +749,12 @@ button {
     .social-media-link a {
         font-size: 24px;
     }
-    
+    .skills{
+        height: 500px;
+    }
     .skills h1{
-        margin-bottom: 50px;
+        position: relative;
+        bottom: 50px;
         font-size: 18px;
     }
     .skills-card {

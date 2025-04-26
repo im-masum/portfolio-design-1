@@ -750,12 +750,16 @@ button {
         font-size: 24px;
     }
     .skills{
-        height: 500px;
+        justify-content: center;
+        align-items: center;
+        height: 400px;
+        border: 1px solid;
+        top:20px;
     }
     .skills h1{
-        position: relative;
-        bottom: 50px;
+        margin-bottom: 70px;
         font-size: 18px;
+
     }
     .skills-card {
         display: flex;

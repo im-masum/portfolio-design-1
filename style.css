@@ -652,7 +652,7 @@ button {
     .nav ul {
         display: block;
         position: fixed;
-        top: 80px;
+        top: 85px;
         left: -100%;
         margin-left: 15px;
         width: 89%;
@@ -751,7 +751,7 @@ button {
     }
     
     .skills h1{
-        margin-bottom: 80px;
+        margin-bottom: 60px;
         font-size: 18px;
     }
     .skills-card {

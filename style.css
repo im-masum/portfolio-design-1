@@ -652,9 +652,9 @@ button {
     .nav ul {
         display: block;
         position: fixed;
-        top: 85px;
+        top: 90px;
         left: -100%;
-        margin-left: 18px;
+        margin-left: 20px;
         width: 89%;
         align-items: center;
         justify-content: center;

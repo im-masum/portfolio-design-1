@@ -750,11 +750,7 @@ button {
         font-size: 24px;
     }
     .skills{
-        
-        justify-content: center;
-        align-items: center;
         height: 450px;
-        border: 1px solid;
         top:15px;
     }
     .skills h1{
